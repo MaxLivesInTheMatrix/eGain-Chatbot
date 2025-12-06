@@ -1,3 +1,5 @@
+Live on: https://egainchatbot.vercel.app/
+
 ## GPU Advisor Chatbot (Next.js + OpenAI)
 
 A minimal, one‑page Next.js app that acts as a focused GPU buying advisor. It uses an API route that calls OpenAI and a simple UI that renders assistant responses in Markdown. Deploys easily on Vercel (free).
