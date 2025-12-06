@@ -28,8 +28,8 @@ export default function Page() {
     const trimmed = inputValue.trim()
     if (!trimmed || isSending) return
 
-    const nextMessages = [...messages, { role: 'user', content: trimmed }]
-    setMessages(nextMessages)
+    const nextMessages: ChatMessage[] = [...messages, { role: 'user' as const, content: trimmed }]
+    setMessages(prev => [...prev, { role: 'user' as const, content: trimmed }])
     setInputValue('')
     setIsSending(true)
     try {
